@@ -20,8 +20,13 @@ body {
 	background-color: rgb(4, 64, 75);
 }
 
-@layer utilities {
-	.text-balance {
-		text-wrap: balance;
-	}
+@font-face {
+	font-family: "Inter";
+	src: url("/fonts/Inter-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	font-family: "Inter", sans-serif;
 }

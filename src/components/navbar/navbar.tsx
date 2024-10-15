@@ -7,21 +7,22 @@ import Hamburger from "../hamburger/hamburger";
 const Navbar = () => {
 	return (
 		<div>
-			<nav className=' justify-between'>
-				<ul>
-					<div className='flex justify-between bg-[#3a5154] rounded-3xl p-2 '>
-						<li>
-							<Logo />
-						</li>
-						<li>
-							<Link className='text-white' href={""}>
-								<Name />
-							</Link>
-						</li>
-						<li>
-							<Hamburger />
-						</li>
-					</div>
+			<nav className='bg-[#3a5154] rounded-3xl p-2 '>
+				<ul className='flex items-center justify-between'>
+					<li className='flex gap-2'>
+						<Logo />
+						<div className=' hidden lg:flex'>
+							<Name />
+						</div>
+					</li>
+					<li>
+						<Link className='text-white m-auto block lg:hidden' href={""}>
+							<Name />
+						</Link>
+					</li>
+					<li className=' lg:mr-14'>
+						<Hamburger />
+					</li>
 				</ul>
 			</nav>
 		</div>
