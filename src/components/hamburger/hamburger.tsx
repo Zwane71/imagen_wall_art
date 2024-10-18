@@ -11,13 +11,25 @@ const Hamburger = () => {
 					<Link href={"/"}>Home</Link>{" "}
 				</li>
 				<li>
-					<Link href={"/"}>Services & Products</Link>
+					<Link href={"/dashboard"}>Services & Products</Link>
 				</li>
 				<li>
-					<Link href={""}>Log In</Link>
+					<Link href={""}>About us</Link>
 				</li>
 				<li>
-					<Link href={""}>Sign Up</Link>
+					<Link
+						href={"/login"}
+						className='transition ease-in-out delay-150  p-2 rounded-xl border  hover:-translate-y-1 hover:scale-110 hover:bg-white hover:border hover:text-[#3a5154] duration-300 '>
+						Log In
+					</Link>
+				</li>
+
+				<li>
+					<Link
+						href={"/signup"}
+						className='transition ease-in-out delay-150 text-[#3a5154] p-2 rounded-xl bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#3a5154] hover:border hover:text-white duration-300 '>
+						Sign Up
+					</Link>
 				</li>
 			</ul>
 			<div className='flex lg:hidden'>

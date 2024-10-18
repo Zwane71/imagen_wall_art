@@ -9,7 +9,7 @@ import { RiWhatsappFill } from "react-icons/ri";
 const Footer = () => {
 	return (
 		<div>
-			<div className='flex items-center md:flex-row  bg-[rgb(31,37,47)] justify-between p-2'>
+			<div className='flex items-center md:flex-row  bg-[rgb(31,37,47)] justify-between p-2 bottom-0'>
 				<div className='ml-2'>
 					<Image
 						src='/full-logo.png'
