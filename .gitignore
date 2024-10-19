@@ -11,5 +11,5 @@ node_modules/
 dist/
 build/
 
-# ignore next file
-./next
+# Ignore .next folder
+.next/
