@@ -1,4 +1,4 @@
-# Ignore node_modules folder
+ Ignore node_modules folder
 node_modules/
 
 # Ignore environment variables
@@ -11,5 +11,5 @@ node_modules/
 dist/
 build/
 
-# Ignore .next folder
+# Ignore the .next files
 .next/
