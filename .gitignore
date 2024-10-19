@@ -10,3 +10,6 @@ node_modules/
 # Ignore build outputs
 dist/
 build/
+
+# Ignore the .next files
+.next/
