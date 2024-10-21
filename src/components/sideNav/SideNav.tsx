@@ -2,6 +2,9 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Link from "next/link"; // Adjust this import if using a different router
+import { auth } from "@clerk/nextjs/server";
+import { SignedOut } from "@clerk/nextjs";
+import { SignedIn } from "@clerk/clerk-react";
 
 const Sidebar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,6 +59,35 @@ const Sidebar = () => {
 							{`Contact`}
 						</Link>
 					</li>
+
+					<SignedOut>
+						<li role='menuitem'>
+							<Link
+								href='/login'
+								onClick={() => setIsMenuOpen(false)}
+								className='cursor-pointer text-white text-sm flex w-full items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100'>
+								{`Log In`}
+							</Link>
+						</li>
+						<li role='menuitem'>
+							<Link
+								href='/signup'
+								onClick={() => setIsMenuOpen(false)}
+								className='cursor-pointer text-white text-sm flex w-full items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100'>
+								{`Sign Up`}
+							</Link>
+						</li>
+					</SignedOut>
+					<SignedIn>
+						<li role='menuitem'>
+							<Link
+								href='/profile'
+								onClick={() => setIsMenuOpen(false)}
+								className='cursor-pointer text-white text-sm flex w-full items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100'>
+								{`Profile`}
+							</Link>
+						</li>
+					</SignedIn>
 				</ul>
 			)}
 

@@ -1,8 +1,11 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/footer";
+import { ClerkProvider, ClerkLoading, ClerkLoaded } from "@clerk/nextjs";
+import { dark } from "@clerk/themes";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,14 +20,29 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang='en'>
-			<body className={inter.className}>
-				<div>
-					<Navbar />
-					{children}
-					<Footer />
-				</div>
-			</body>
-		</html>
+		<ClerkProvider appearance={{ baseTheme: dark }}>
+			<html lang='en'>
+				<body className={inter.className}>
+					<ClerkLoading>
+						<div className=' flex min-h-screen items-center justify-center'>
+							<Image
+								src={"/full-logo.png"}
+								alt={"Loading"}
+								width={450}
+								height={450}
+								className='animate-fadeIn' // Use the fadeIn animation class
+							/>
+						</div>
+					</ClerkLoading>
+					<ClerkLoaded>
+						<div>
+							<Navbar />
+							{children}
+							<Footer />
+						</div>
+					</ClerkLoaded>
+				</body>
+			</html>
+		</ClerkProvider>
 	);
 }
