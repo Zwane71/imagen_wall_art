@@ -12,7 +12,7 @@ const UserProfilePage = async () => {
 	}
 
 	return;
-	<div className=' flex p-6 mx-auto items-center justify-center '>
+	<div className=' flex p-6 mx-auto items-center justify-center  '>
 		<h2>{user?.username}</h2>
 		<UserProfile path='/profile' />
 	</div>;

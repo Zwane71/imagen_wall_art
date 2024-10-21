@@ -5,12 +5,12 @@ export default function Home() {
 	return (
 		<main className=' min-h-screen  bg-[rgb(4,64,75)]'>
 			<div className='p-4 '>
-				<div className=' text-white mx-40 gap-40  '>
+				<div className=' text-white mx-2 lg:mx-40 gap-40  '>
 					<div className='mt-10 flex-col md:flex md:flex-row  md:justify-between'>
-						<div className='md:ml-24 '>
+						<div className='md:ml-24  '>
 							<Fulllogo />
 						</div>
-						<h3 className='text-[#a9edf8] text-xl lg:text-2xl md:mt-5 font-extrabold text-center p-2'>
+						<h3 className='text-[#a9edf8] text-sm lg:text-2xl md:mt-5 font-extrabold text-center p-2'>
 							"TO PROVIDE TIME QUALITY SERVICES AND <br /> OUTSTANDING
 							CRAFTSMANSHIP,
 							<br />
@@ -18,8 +18,8 @@ export default function Home() {
 						</h3>
 					</div>
 				</div>
-				<div className='p-20 '>
-					<div className='text-white text-2xl lg:text-4xl font-extrabold text-center p-2'>
+				<div className=' p-5 lg:p-20 '>
+					<div className='text-white text-ase md:text-xl lg:text-4xl font-extrabold text-center p-2'>
 						<p>Bring Your Memories to</p>
 						<p>Life in just a</p>
 						<p>few clicks</p>
