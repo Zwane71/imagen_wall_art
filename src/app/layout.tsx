@@ -1,14 +1,12 @@
 import Image from "next/image";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+
 import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/footer";
 import { ClerkProvider, ClerkLoading, ClerkLoaded } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import { Analytics } from "@vercel/analytics/react";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Imagen Wall Art",
@@ -23,7 +21,7 @@ export default function RootLayout({
 	return (
 		<ClerkProvider appearance={{ baseTheme: dark }}>
 			<html lang='en'>
-				<body className={inter.className}>
+				<body>
 					<ClerkLoading>
 						<div className=' flex min-h-screen items-center justify-center'>
 							<Image
