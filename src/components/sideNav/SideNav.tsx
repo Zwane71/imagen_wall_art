@@ -25,7 +25,7 @@ const Sidebar = () => {
 			{isMenuOpen && (
 				<ul
 					role='menu'
-					className='absolute right-0 z-10 min-w-[180px] max-w-[280px] h-[100vh] mt-1 overflow-y-auto rounded-lg bg-[#1F252F] bg-opacity-50 p-1.5 shadow-lg focus:outline-none'>
+					className='absolute translate-x-10  right-0 z-10 min-w-[180px] max-w-[280px] h-[100vh] mt-1 overflow-y-auto rounded-lg bg-[#1F252F] bg-opacity-50 p-1.5 shadow-lg focus:outline-none'>
 					<li role='menuitem'>
 						<Link
 							href='/'

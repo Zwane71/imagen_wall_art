@@ -20,7 +20,7 @@ const Navbar = () => {
 							<Name />
 						</Link>
 					</li>
-					<li className=' lg:mr-14'>
+					<li className=' lg:mr-10'>
 						<Hamburger />
 					</li>
 				</ul>
