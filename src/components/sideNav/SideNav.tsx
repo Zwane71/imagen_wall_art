@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import Link from "next/link"; // Adjust this import if using a different router
 import { auth } from "@clerk/nextjs/server";
 import { SignedOut } from "@clerk/nextjs";
-import { SignedIn } from "@clerk/clerk-react";
+import { SignedIn, SignOutButton } from "@clerk/clerk-react";
 
 const Sidebar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -86,6 +86,9 @@ const Sidebar = () => {
 								className='cursor-pointer text-white text-sm flex w-full items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100'>
 								{`Profile`}
 							</Link>
+						</li>
+						<li role='menuitem' className='text-white ml-2'>
+							<SignOutButton />
 						</li>
 					</SignedIn>
 				</ul>
