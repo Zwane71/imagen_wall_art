@@ -36,7 +36,7 @@ const Sidebar = () => {
 					</li>
 					<li role='menuitem'>
 						<Link
-							href='/'
+							href='/dashboard'
 							onClick={() => setIsMenuOpen(false)}
 							className='cursor-pointer text-white text-sm flex w-full items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100'>
 							{`Services & Products`}
