@@ -17,7 +17,7 @@ const Sidebar = () => {
 		<div className='relative inline-block'>
 			<button
 				onClick={toggleMenu}
-				className='py-2 px-4 text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:shadow-none active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2'
+				className=' text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:shadow-none active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none translate-x-5 translate-y-1 '
 				type='button'>
 				<GiHamburgerMenu size={40} />
 			</button>

@@ -7,7 +7,7 @@ import Hamburger from "../hamburger/hamburger";
 const Navbar = () => {
 	return (
 		<div>
-			<nav className='bg-[#3a5154] rounded-3xl p-2 '>
+			<nav className='bg-[#3a5154] rounded-3xl p-1 '>
 				<ul className='flex items-center justify-between'>
 					<li className='flex gap-2'>
 						<Logo />
